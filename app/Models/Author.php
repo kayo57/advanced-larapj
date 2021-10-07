@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -26,6 +25,7 @@ class Author extends Model
         return $this->hasOne('App\Models\Book');
     }
     public function books(){
-     return $this->hasMany('App\Models\Book');
+        return $this->hasMany('App\Models\Book');
+    }
 }
-}
+
